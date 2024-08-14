@@ -15,5 +15,5 @@ git clone https://github.com/SubLim3JS/SubLim3-MagicMirror
 ````
 Run the script to move files to the right locations
 ````javascript
-chmod +x move_files.sh
+cd SubLim3-MagicMirror && chmod +x move_files.sh
 ````
