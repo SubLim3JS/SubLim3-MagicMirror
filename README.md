@@ -1,7 +1,7 @@
-# MagicMirror
+# SubLim3 MagicMirror
 SubLim3 Magic Mirror Files - This will create a folder with SubLim3's custom configs. They will need to be moved to their respective folders within the 'modules' folders.
 
-# Development Notes
+## Development Notes
 This ties into the modules of a <a href="https://github.com/MichMich/MagicMirror">MagicMirror</a>
 
 ## Installation Code
