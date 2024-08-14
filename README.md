@@ -5,9 +5,9 @@ SubLim3 Magic Mirror Files - This will create a folder with SubLim3's custom con
 This ties into the modules of a <a href="https://github.com/MichMich/MagicMirror">MagicMirror</a>
 
 ## Installation Code
-Go to the 'modules' folder.
+Go to the root folder.
 ````javascript
-cd ~/MagicMirror/modules
+cd ~
 ````
 Clone the repository.
 ````javascript
