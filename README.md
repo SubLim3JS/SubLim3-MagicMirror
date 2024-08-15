@@ -26,12 +26,12 @@ chmod +x move_files.sh && ./move_files.sh
 ````
 _____________________________________________________________________________________________________________________________________________________________________
 # Preferred Modules
-MMM-ModuleScheduler
-MMM-Carousel
-MMM-GoogleCalendar
-MMM-Remote-Control
-MMM-Remote-Control-Repository
-MMM-PIR-Sensor
-MMM-MoonPhase
-MMM-DailyBibleVerse
-MMM-Screencast
+MMM-ModuleScheduler  
+MMM-Carousel  
+MMM-GoogleCalendar  
+MMM-Remote-Control  
+MMM-Remote-Control-Repository  
+MMM-PIR-Sensor  
+MMM-MoonPhase  
+MMM-DailyBibleVerse  
+MMM-Screencast  
