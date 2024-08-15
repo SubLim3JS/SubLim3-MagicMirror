@@ -17,7 +17,8 @@ Change to the SubLim3 MagicMirror directory.
 ````javascript
 cd SubLim3-MagicMirror
 ````
+Before you can run your script, you need to give it execute permissions.
 Execute the bash script to install custom config.js and compliments.js.
 ````javascript
-chmod +x move_files.sh
+chmod +x move_files.sh && ./move_files.sh
 ````
