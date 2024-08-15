@@ -9,22 +9,12 @@ ________________________________________________________________________________
 
 ## Installation Code
 Go to the root folder.
-````javascript
+```bash
 cd ~
-````
-Clone the repository.
-````javascript
 git clone https://github.com/SubLim3JS/SubLim3-MagicMirror
-````
-Change to the SubLim3 MagicMirror directory.
-````javascript
 cd SubLim3-MagicMirror
-````
-Before you can run your script, you need to give it execute permissions.
-Execute the bash script to install custom config.js and compliments.js.
-````javascript
 chmod +x move_files.sh && ./move_files.sh
-````
+```
 _____________________________________________________________________________________________________________________________________________________________________
 
 # Preferred Modules
