@@ -5,6 +5,7 @@ SubLim3 Magic Mirror Files - This will create a folder with SubLim3's custom con
 This is all based on <a href="https://magicmirror.builders/">MagicMirror</a>  
 This customizes modules of a <a href="https://github.com/MichMich/MagicMirror">MagicMirror</a>  
 This is where you can find <a href="https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules">3rd Party modules</a>  
+_____________________________________________________________________________________________________________________________________________________________________
 
 ## Installation Code
 Go to the root folder.
@@ -25,6 +26,7 @@ Execute the bash script to install custom config.js and compliments.js.
 chmod +x move_files.sh && ./move_files.sh
 ````
 _____________________________________________________________________________________________________________________________________________________________________
+
 # Preferred Modules
 MMM-ModuleScheduler  
 MMM-Carousel  
