@@ -11,7 +11,7 @@ fi
 # Remove original_compliments.js from ~/MagicMirror/modules/default/compliments/.
 if [ -f ~/MagicMirror/modules/default/compliments/original_compliments.js ]; then
     rm -rf ~/MagicMirror/modules/default/compliments/original_compliments.js
-    echo "The compliments.js has been removed."
+    echo "The original_compliments.js has been removed."
 else
     echo "File original_compliments.js not found in ~/MagicMirror/modules/default/compliments/"
 fi
