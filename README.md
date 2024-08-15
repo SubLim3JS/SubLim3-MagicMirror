@@ -13,7 +13,11 @@ Clone the repository.
 ````javascript
 git clone https://github.com/SubLim3JS/SubLim3-MagicMirror
 ````
-Run the script to move files to the right locations
+Change to the SubLim3 MagicMirror directory.
 ````javascript
-cd SubLim3-MagicMirror && chmod +x move_files.sh
+cd SubLim3-MagicMirror
+````
+Execute the bash script to install custom config.js and compliments.js.
+````javascript
+chmod +x move_files.sh
 ````
