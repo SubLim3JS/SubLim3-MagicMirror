@@ -78,6 +78,7 @@ let config = {
 			header: "US Holidays",
 			position: "top_left",
 			config: {
+                                fade: false,
                                 maxTitleLength: 25,
 				maximumEntries: 5,
 				calendars: [
