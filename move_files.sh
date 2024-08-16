@@ -1,5 +1,13 @@
 #!/bin/bash
 
+echo                                              ____         ___       ___   __
+echo   _____       _     __      _               |___ \       |   \     /   | |__|
+echo  / ____|     | |   |  |    |_|                __| |      |    \   /    |  __   _______   _______   _______    _______
+echo | (___  _   _| |__ |  |     _   __     __    |__  |      |     \ /     | |  | |   __  | |   __  | /   __  \  |   __  |
+echo  \___ \| | | | '_ \|  |    | | /   \__/  \   |_   |      |  |\    /\   | |  | |  /  \_| |  /  \_| |  |  |  | |  /  \_|
+echo  ____) | |_| | |_) |  |___ | | | /\    /\ |  __|  |      |  | \  /  |  | |  | |  |      |  |      |  |__|  | |  |
+echo |_____/ \__,_|_.__/|_____| |_| |_| \_/  \_| |_____/      |__|  \/   |__| |__| |__|      |__|       \______/  |__|
+
 # Rename config.js so the custom file can be added.
 if [ -f ~/MagicMirror/config/config.js ]; then
     mv -f ~/MagicMirror/config/config.js ~/MagicMirror/config/original_config.js
