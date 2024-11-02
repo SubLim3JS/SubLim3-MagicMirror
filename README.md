@@ -10,8 +10,7 @@ ________________________________________________________________________________
 ## OS Update Code
 Execute at the root folder.
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install build-essentials
 sudo apt-get install gcc-5
 ```
