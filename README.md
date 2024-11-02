@@ -23,7 +23,7 @@ bash -c  "$(curl -sL https://raw.githubusercontent.com/sdetweil/MagicMirror_scri
 ```
 _____________________________________________________________________________________________________________________________________________________________________
 
-## Installation Code
+## SubLim3 Installation Code
 Execute at the root folder.
 ```bash
 cd ~
