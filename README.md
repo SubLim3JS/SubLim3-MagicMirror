@@ -7,6 +7,16 @@ This customizes modules of a <a href="https://github.com/MichMich/MagicMirror">M
 This is where you can find <a href="https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules">3rd Party modules</a>  
 _____________________________________________________________________________________________________________________________________________________________________
 
+## OS Update Code
+Execute at the root folder.
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install build-essentials
+sudo apt-get install gcc-5
+```
+_____________________________________________________________________________________________________________________________________________________________________
+
 ## Installation Code
 Execute at the root folder.
 ```bash
