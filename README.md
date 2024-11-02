@@ -4,7 +4,7 @@ SubLim3 Magic Mirror Files - This will create a folder with SubLim3's custom con
 ## Development Notes
 This is all based on <a href="https://magicmirror.builders/">Magic Mirror²</a>  
 This customizes modules of a <a href="https://github.com/MichMich/MagicMirror">MagicMirror</a>  
-This is where you can find <a href="https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules">3rd Party modules</a>  
+This is where you can find <a href="https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules">3rd Party modules</a>
 _____________________________________________________________________________________________________________________________________________________________________
 
 ## OS Update Code
@@ -14,6 +14,13 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install build-essentials
 sudo apt-get install gcc-5
+```
+_____________________________________________________________________________________________________________________________________________________________________
+
+## MagicMirror Installation Script
+Execute at the root folder.
+```bash
+bash -c  "$(curl -sL https://raw.githubusercontent.com/sdetweil/MagicMirror_scripts/master/raspberry.sh)"
 ```
 _____________________________________________________________________________________________________________________________________________________________________
 
