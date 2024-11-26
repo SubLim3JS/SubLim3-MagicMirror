@@ -1,4 +1,4 @@
-/* global Cron */
+/* SubLim3 Complliments */
 
 Module.register("compliments", {
 	// Module config defaults.
