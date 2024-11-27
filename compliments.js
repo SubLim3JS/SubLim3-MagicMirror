@@ -106,10 +106,10 @@ Module.register("compliments", {
 				"It's a good night for star gazing."
 			]
 		},
-		updateInterval: 20000,
+		updateInterval: 30000,
 		remoteFile: null,
 		fadeSpeed: 4000,
-		morningStartTime: 4,
+		morningStartTime: 3,
 		morningEndTime: 12,
 		afternoonStartTime: 12,
 		afternoonEndTime: 17,
