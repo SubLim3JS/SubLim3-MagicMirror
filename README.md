@@ -40,9 +40,9 @@ ________________________________________________________________________________
 <a href="https://github.com/shbatm/MMM-Carousel">MMM-Carousel</a>  
 <a href="https://github.com/MarcLandis/MMM-PIR-Sensor">MMM-PIR-Sensor</a>  
 <a href="https://github.com/arthurgarzajr/MMM-DailyBibleVerse">MMM-DailyBibleVerse</a>  
+<a href="https://github.com/Kreshnik/MMM-JokeAPI">MMM-JokeAPI
 <a href="https://github.com/kevinatown/MMM-Screencast">MMM-Screencast</a>  
 <a href="https://github.com/randomBrainstormer/MMM-GoogleCalendar">MMM-GoogleCalendar</a> 
-<a href="https://github.com/Kreshnik/MMM-JokeAPI">MMM-JokeAPI</a> 
   
 _____________________________________________________________________________________________________________________________________________________________________
 
