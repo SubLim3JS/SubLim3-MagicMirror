@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo " ____        _     _     _           _____   __  __ _                     "
+echo "/ ___| _   _| |__ | |   (_)_ __ ___ |___ /  |  \/  (_)_ __ _ __ ___  _ __ "
+echo "\___ \| | | | '_ \| |   | | '_ ` _ \  |_ \  | |\/| | | '__| '__/ _ \| '__|"
+echo " ___) | |_| | |_) | |___| | | | | | |___) | | |  | | | |  | | | (_) | |   "
+echo "|____/ \__,_|_.__/|_____|_|_| |_| |_|____/  |_|  |_|_|_|  |_|  \___/|_|   "
+
 # Remove original_config.js from ~/MagicMirror/config/.
 if [ -f ~/MagicMirror/config/original_config.js ]; then
     rm -rf ~/MagicMirror/config/original_config.js
