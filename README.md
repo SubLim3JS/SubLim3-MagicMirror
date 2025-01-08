@@ -42,6 +42,10 @@ ________________________________________________________________________________
 <a href="https://github.com/arthurgarzajr/MMM-DailyBibleVerse">MMM-DailyBibleVerse</a>  
 <a href="https://github.com/kevinatown/MMM-Screencast">MMM-Screencast</a>  
 <a href="https://github.com/randomBrainstormer/MMM-GoogleCalendar">MMM-GoogleCalendar</a> 
+<a href="https://github.com/Kreshnik/MMM-JokeAPI">MMM-JokeAPI</a>  
+
+
+
 <a href="https://github.com/Kreshnik/MMM-JokeAPI">MMM-JokeAPI</a>
   
 _____________________________________________________________________________________________________________________________________________________________________
