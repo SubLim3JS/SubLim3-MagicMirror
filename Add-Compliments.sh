@@ -25,7 +25,7 @@ echo "*************************************************************"
 sleep 5
 
 if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
-    mv -f ~/SubLim3-MagicMirror/compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
+    cp -f ~/SubLim3-MagicMirror/compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
     echo "SubLim3 compliments.js has been moved to the MagicMirror compliments module folder."
 else
     echo "File compliments.js not found in ~/SubLim3-MagicMirror/"
