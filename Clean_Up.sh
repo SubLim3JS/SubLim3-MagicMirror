@@ -30,3 +30,7 @@ if [ -f ~/MagicMirror/modules/default/compliments/original_compliments.js ]; the
 else
     echo "File original_compliments.js not found in ~/MagicMirror/modules/default/compliments/"
 fi
+
+echo "****************************************************"
+echo "***  - All operations completed successfully.  - ***"
+echo "****************************************************"
