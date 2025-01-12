@@ -54,3 +54,7 @@ if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
 else
     echo "File compliments.js not found in ~/SubLim3-MagicMirror/"
 fi
+
+echo "****************************************************"
+echo "***  - All operations completed successfully.  - ***"
+echo "****************************************************"
