@@ -19,9 +19,9 @@ else
     echo "File config.js not found in ~/MagicMirror/config/"
 fi
 
-echo "**************************************************************"
-echo "***Move the SubLim3 custom config.js to the config folder. ***"
-echo "**************************************************************"
+echo "***************************************************************"
+echo "*** Move the SubLim3 custom config.js to the config folder. ***"
+echo "***************************************************************"
 sleep 5
 
 if [ -f ~/SubLim3-MagicMirror/config.js ]; then
