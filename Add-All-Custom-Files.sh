@@ -18,16 +18,17 @@ sleep 3
 # Print the first message block
 printf "*********************************************************\n"
 printf "*** Rename config.js so the custom file can be added. ***\n"
-printf "*********************************************************\n\n\n"
+printf "*********************************************************\n\n"
 
 sleep 3
 
 # Check and move config.js
 if [ -f ~/MagicMirror/config/config.js ]; then
     mv -f ~/MagicMirror/config/config.js ~/MagicMirror/config/original_config.js
-    printf " - Default config.js has been archived - \n"
+    printf 
+    " - Default config.js has been archived - \n\n\n"
 else
-    printf " - File config.js not found in ~/MagicMirror/config/ - \n"
+    printf " - File config.js not found in ~/MagicMirror/config/ - \n\n\n"
 fi
 
 printf "***************************************************************\n"
