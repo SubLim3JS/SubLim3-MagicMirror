@@ -1,4 +1,5 @@
 #!/bin/bash
+
 printf "
 
    _____       __    __    _          _____    __  ____                     
@@ -18,10 +19,14 @@ echo "**************************************************************"
 sleep 5
 
 if [ -f ~/MagicMirror/modules/default/compliments/compliments.js ]; then
-    mv -f ~/MagicMirror/modules/default/compliments/compliments.js ~/MagicMirror/modules/default/compliments/original_compliments.js
+    cp -f ~/MagicMirror/modules/default/compliments/compliments.js ~/MagicMirror/modules/default/compliments/original_compliments.js
+    printf ""
     echo "Default compliments.js has been archived."
+    printf ""
 else
+    printf ""
     echo "File compliments.js not found in ~/MagicMirror/modules/default/compliments/"
+    printf ""
 fi
 
 echo "*************************************************************"
@@ -31,9 +36,13 @@ sleep 5
 
 if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
     cp -f ~/SubLim3-MagicMirror/compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
+    printf ""
     echo "SubLim3 compliments.js has been moved to the MagicMirror compliments module folder."
+    printf ""
 else
+    printf ""
     echo "File compliments.js not found in ~/SubLim3-MagicMirror/"
+    printf ""
 fi
 
 echo "****************************************************"
