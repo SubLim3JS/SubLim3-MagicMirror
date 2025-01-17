@@ -19,9 +19,11 @@ while true; do
     answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 
     if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
+        printf ""
         printf "**********************************************\n"
         printf "*** Restoring the original compliments.js. ***\n"
         printf "**********************************************\n\n"
+        printf ""
         sleep 3
 
         if [ -f ~/MagicMirror/modules/default/compliments/compliments.js ]; then
@@ -35,9 +37,11 @@ while true; do
             printf ""
         fi
 
+        printf ""
         printf "*************************************************************\n"
         printf "*** Move custom compliments.js to the compliments folder. ***\n"
         printf "*************************************************************\n"
+        printf ""
         sleep 3
 
         if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
@@ -51,9 +55,11 @@ while true; do
             printf ""
         fi
 
+        printf ""
         printf "****************************************************\n"
         printf "***  - All operations completed successfully.  - ***\n"
         printf "****************************************************\n\n"
+        printf ""
         sleep 5\3
         break
     elif [[ "$answer" == "n" || "$answer" == "no" ]]; then
@@ -75,9 +81,11 @@ while true; do
     answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 
     if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
+        printf ""
         printf "*********************************************************\n"
         printf "*** Rename config.js so the custom file can be added. ***\n"
         printf "*********************************************************\n\n"
+        printf ""
         sleep 5
 
         if [ -f ~/MagicMirror/config/config.js ]; then
@@ -91,9 +99,11 @@ while true; do
             printf ""
         fi
 
+        printf ""
         printf "***************************************************************\n"
         printf "*** Move the SubLim3 custom config.js to the config folder. ***\n"
         printf "***************************************************************\n\n"
+        printf ""
         sleep 5
 
         if [ -f ~/SubLim3-MagicMirror/config.js ]; then
@@ -119,6 +129,7 @@ while true; do
     fi
 done
 
+printf ""
 printf "****************************************************\n"
 printf "***  - All operations completed successfully.  - ***\n"
 printf "****************************************************\n"
