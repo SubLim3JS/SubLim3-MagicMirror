@@ -27,7 +27,7 @@ while true; do
         printf ""
         sleep 3
 
-        if [ -f ~/MagicMirror/modules/default/compliments/compliments.js ]; then
+        if [ -f ~/MagicMirror/modules/default/compliments/original_compliments.js ]; then
             mv -f ~/MagicMirror/modules/default/compliments/original_compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
             printf ""
             printf " - Default compliments.js has been restored. - \n\n"
@@ -35,24 +35,6 @@ while true; do
         else
             printf ""
             printf " - File original_compliments.js not found in ~/MagicMirror/modules/default/compliments/ - \n\n"
-            printf ""
-        fi
-
-        printf ""
-        printf "*************************************************************\n"
-        printf "*** Move custom compliments.js to the compliments folder. ***\n"
-        printf "*************************************************************\n"
-        printf ""
-        sleep 3
-
-        if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
-            mv -f ~/SubLim3-MagicMirror/compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
-            printf ""
-            printf " - SubLim3 compliments.js has been moved to the MagicMirror compliments module folder. - \n\n"
-            printf ""
-        else
-            printf ""
-            printf " - File compliments.js not found in ~/SubLim3-MagicMirror/ - \n\n"
             printf ""
         fi
 
@@ -80,6 +62,7 @@ while true; do
     echo "Do you want restore the base config? (Y/n)"
     read answer
     answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
+    printf "\n"
 
     if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
         printf "\n\n"
