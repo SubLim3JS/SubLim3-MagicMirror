@@ -62,7 +62,9 @@ while true; do
         printf""
         break
     else
-        echo "Invalid input, please enter Y or n."
+        printf""
+        printf "Invalid input, please enter Y or n."
+        printf""
     fi
 done
 
@@ -73,35 +75,47 @@ while true; do
     answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 
     if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
-        echo "*********************************************************\n"
-        echo "*** Rename config.js so the custom file can be added. ***\n"
-        echo "*********************************************************\n\n"
+        printf "*********************************************************\n"
+        printf "*** Rename config.js so the custom file can be added. ***\n"
+        printf "*********************************************************\n\n"
         sleep 5
 
         if [ -f ~/MagicMirror/config/config.js ]; then
             mv -f ~/MagicMirror/config/config.js ~/MagicMirror/config/original_config.js
-            echo "Default config.js has been archived."
+            printf ""
+            printf "Default config.js has been archived."
+            printf ""
         else
-            echo "File config.js not found in ~/MagicMirror/config/"
+            printf ""
+            printf "File config.js not found in ~/MagicMirror/config/"
+            printf ""
         fi
 
-        echo "***************************************************************\n"
-        echo "*** Move the SubLim3 custom config.js to the config folder. ***\n"
-        echo "***************************************************************\n\n"
+        printf "***************************************************************\n"
+        printf "*** Move the SubLim3 custom config.js to the config folder. ***\n"
+        printf "***************************************************************\n\n"
         sleep 5
 
         if [ -f ~/SubLim3-MagicMirror/config.js ]; then
             mv -f ~/SubLim3-MagicMirror/config.js ~/MagicMirror/config/config.js
-            echo "SubLim3 config.js has been moved to the MagicMirror config folder."
+            printf ""
+            printf "SubLim3 config.js has been moved to the MagicMirror config folder."
+            printf ""
         else
-            echo "File SubLim3 config.js not found in ~/SubLim3-MagicMirror/"
+            printf ""
+            printf "File SubLim3 config.js not found in ~/SubLim3-MagicMirror/"
+            printf ""
         fi
         break
     elif [[ "$answer" == "n" || "$answer" == "no" ]]; then
-        echo "You chose No."
+        printf ""
+        printf "You chose No."
+        printf ""
         break
     else
-        echo "Invalid input, please enter Y or n."
+        printf ""
+        printf "Invalid input, please enter Y or n."
+        printf ""
     fi
 done
 
