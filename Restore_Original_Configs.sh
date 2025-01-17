@@ -19,7 +19,7 @@ while true; do
     read answer
     answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 
-    if [[ "Answer $answer" == "y" || "$answer" == "yes" ]]; then
+    if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
         printf "\n"
         printf "**********************************************\n"
         printf "*** Restoring the original compliments.js. ***\n"
