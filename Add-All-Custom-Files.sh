@@ -86,5 +86,5 @@ else
 fi
 
 printf "****************************************************\n"
-printf "***  - All operations completed successfully.  - ***\n"
+printf "***  - All operations completed successfully. - ***\n"
 printf "****************************************************\n\n"
