@@ -33,17 +33,17 @@ ________________________________________________________________________________
 
 # Preferred Modules
 
-<a href="https://github.com/Jopyth/MMM-Remote-Control">MMM-Remote-Control</a>
-<a href="https://github.com/MMRIZE/MMM-Remote-Control-Repository">MMM-Remote-Control-Repository</a>
+<a href="https://github.com/Jopyth/MMM-Remote-Control">MMM-Remote-Control</a>  
+<a href="https://github.com/MMRIZE/MMM-Remote-Control-Repository">MMM-Remote-Control-Repository</a>  
 <a href="https://github.com/NolanKingdon/MMM-MoonPhase">MMM-MoonPhase</a>  
-<a href="https://github.com/ianperrin/MMM-ModuleScheduler">MMM-ModuleScheduler</a>
-<a href="https://github.com/shbatm/MMM-Carousel">MMM-Carousel</a>
-<a href="https://github.com/MarcLandis/MMM-PIR-Sensor">MMM-PIR-Sensor</a>
-<a href="https://github.com/arthurgarzajr/MMM-DailyBibleVerse">MMM-DailyBibleVerse</a>
-<a href="https://github.com/kevinatown/MMM-Screencast">MMM-Screencast</a>
-<a href="https://github.com/randomBrainstormer/MMM-GoogleCalendar">MMM-GoogleCalendar</a>
-<a href="https://github.com/btastic/MMM-SystemMonitor">MMM-SystemMonitor</a>
-<a href="https://magicmirror.builders/">Test 2</a>
+<a href="https://github.com/ianperrin/MMM-ModuleScheduler">MMM-ModuleScheduler</a>  
+<a href="https://github.com/shbatm/MMM-Carousel">MMM-Carousel</a>  
+<a href="https://github.com/MarcLandis/MMM-PIR-Sensor">MMM-PIR-Sensor</a>  
+<a href="https://github.com/arthurgarzajr/MMM-DailyBibleVerse">MMM-DailyBibleVerse</a>  
+<a href="https://github.com/kevinatown/MMM-Screencast">MMM-Screencast</a>  
+<a href="https://github.com/randomBrainstormer/MMM-GoogleCalendar">MMM-GoogleCalendar</a> 
+<a href="https://github.com/btastic/MMM-SystemMonitor">MMM-SystemMonitor</a> 
+<a href="https://magicmirror.builders/">Test 2</a>  
 
 _____________________________________________________________________________________________________________________________________________________________________
 
