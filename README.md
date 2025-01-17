@@ -43,6 +43,7 @@ ________________________________________________________________________________
 <a href="https://github.com/kevinatown/MMM-Screencast">MMM-Screencast</a>  
 <a href="https://github.com/randomBrainstormer/MMM-GoogleCalendar">MMM-GoogleCalendar</a>  
 <a href="https://github.com/btastic/MMM-SystemMonitor">MMM-SystemMonitor</a>  
+<a href="https://github.com/Kreshnik/MMM-JokeAPI">MMM-JokeAPI</a>  
 
 _____________________________________________________________________________________________________________________________________________________________________
 
@@ -55,6 +56,5 @@ ________________________________________________________________________________
 <a href="https://github.com/edward-shen/MMM-page-indicator">MMM-page-indicator</a>  
 <a href="https://github.com/zerosamski/MMM-Page-Pusher">MMM-Page-Pusher</a>  
 <a href="https://github.com/jboucly/MMM-Pages-Screencast">MMM-Pages-Screencast</a>  
-<a href="https://github.com/Kreshnik/MMM-JokeAPI">MMM-JokeAPI</a>  
 <a href="https://magicmirror.builders/">Test 2</a>  
 <a href="https://magicmirror.builders/">Test 3</a>  
