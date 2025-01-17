@@ -1,3 +1,4 @@
+#!/bin/bash
 
 printf "
 
@@ -12,32 +13,36 @@ printf "
 
 sleep 3
 
-echo "*****************************************************************"
-echo "**** Removing original_config.js from ~/MagicMirror/config/. ****"
-echo "*****************************************************************"
-sleep 5
+printf "*****************************************************************"
+printf "**** Removing original_config.js from ~/MagicMirror/config/. ****"
+printf "*****************************************************************"
+
+sleep 3
 
 if [ -f ~/MagicMirror/config/original_config.js ]; then
-    rm -f ~/MagicMirror/config/original_config.js
-    echo "***** The original_config.js has been removed. *****"
-    sleep 5
+    cp -f ~/MagicMirror/config/original_config.js
+    printf "***** The original_config.js has been removed. *****"
 else
-    echo "File original_config.js not found in ~/MagicMirror/config/"
+    printf "File original_config.js not found in ~/MagicMirror/config/"
 fi
 
-echo "***************************************************************************************"
-echo "** Removing original_compliments.js from ~/MagicMirror/modules/default/compliments/. **"
-echo "***************************************************************************************"
-sleep 5
+sleep 3
+
+printf "***************************************************************************************"
+printf "** Removing original_compliments.js from ~/MagicMirror/modules/default/compliments/. **"
+printf "***************************************************************************************"
+
+sleep 3
+
 
 if [ -f ~/MagicMirror/modules/default/compliments/original_compliments.js ]; then
-    rm -f ~/MagicMirror/modules/default/compliments/original_compliments.js
-    echo "The original_compliments.js has been removed."
+    cp -f ~/MagicMirror/modules/default/compliments/original_compliments.js
+    printf "The original_compliments.js has been removed."
 else
-    echo "File original_compliments.js not found in ~/MagicMirror/modules/default/compliments/"
+    printf "File original_compliments.js not found in ~/MagicMirror/modules/default/compliments/"
 fi
 
-echo "****************************************************"
-echo "***  - All operations completed successfully.  - ***"
-echo "****************************************************"
+printf "****************************************************"
+printf "***  - All operations completed successfully.  - ***"
+printf "****************************************************"
 sleep 5
