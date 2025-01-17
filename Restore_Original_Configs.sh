@@ -63,9 +63,9 @@ while true; do
     answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 
     if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
-        echo "*********************************************************"
-        echo "*** Rename config.js so the custom file can be added. ***"
-        echo "*********************************************************"
+        echo "*********************************************************\n"
+        echo "*** Rename config.js so the custom file can be added. ***\n"
+        echo "*********************************************************\n\n"
         sleep 5
 
         if [ -f ~/MagicMirror/config/config.js ]; then
@@ -75,9 +75,9 @@ while true; do
             echo "File config.js not found in ~/MagicMirror/config/"
         fi
 
-        echo "***************************************************************"
-        echo "*** Move the SubLim3 custom config.js to the config folder. ***"
-        echo "***************************************************************"
+        echo "***************************************************************\n"
+        echo "*** Move the SubLim3 custom config.js to the config folder. ***\n"
+        echo "***************************************************************\n\n"
         sleep 5
 
         if [ -f ~/SubLim3-MagicMirror/config.js ]; then
@@ -95,7 +95,8 @@ while true; do
     fi
 done
 
-echo "****************************************************"
-echo "***  - All operations completed successfully.  - ***"
-echo "****************************************************"
+printf "****************************************************\n"
+printf "***  - All operations completed successfully.  - ***\n"
+printf "****************************************************\n"
+printf ""
 sleep 5
