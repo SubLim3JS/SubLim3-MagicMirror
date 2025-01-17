@@ -11,7 +11,7 @@ printf "
 
 "
 
-sleep 1
+sleep 3
 
 printf "*********************************************************\n"
 printf "*** Rename config.js so the custom file can be added. ***\n"
