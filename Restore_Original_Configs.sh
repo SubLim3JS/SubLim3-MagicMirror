@@ -118,4 +118,4 @@ printf "************************************\n"
 printf "***  - Restorations Complete.  - ***\n"
 printf "************************************\n\n"
 printf ""
-sleep 2
+sleep 1
