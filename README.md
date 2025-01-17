@@ -4,7 +4,7 @@ SubLim3 Magic Mirror Files - This will create a folder with SubLim3's custom con
 ## Development Notes
 This is all based on <a href="https://magicmirror.builders/">Magic Mirror²</a>  
 This customizes modules of a <a href="https://github.com/MichMich/MagicMirror">MagicMirror</a>  
-This is a link to the <d href="https://docs.magicmirror.builders/modules/introduction.html">default modules.</a>
+This is a link to the <a href="https://docs.magicmirror.builders/modules/introduction.html">default modules.</a>
 This is where you can find <a href="https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules">3rd Party modules</a>
 _____________________________________________________________________________________________________________________________________________________________________
 
