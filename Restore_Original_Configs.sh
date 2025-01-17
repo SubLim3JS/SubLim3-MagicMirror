@@ -77,7 +77,7 @@ done
 
 # Custom Base Config Prompt
 while true; do
-    echo "Do you want a custom base config? (Y/n)"
+    echo "Do you want restore the base config? (Y/n)"
     read answer
     answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 
@@ -120,19 +120,19 @@ while true; do
         break
     elif [[ "$answer" == "n" || "$answer" == "no" ]]; then
         printf ""
-        printf " - You chose No. - \n\n"
+        printf " - No changes have been made! - \n\n"
         printf ""
         break
     else
         printf ""
-        printf " - Invalid input, please enter Y or n. - "
+        printf " - Invalid input, please enter Y or n. - \n\n"
         printf ""
     fi
 done
 
 printf ""
-printf "****************************************************\n"
-printf "***  - All operations completed successfully.  - ***\n"
-printf "****************************************************\n\n"
+printf "************************************\n"
+printf "***  - Restorations Complete.  - ***\n"
+printf "************************************\n\n"
 printf ""
 sleep 2
