@@ -1,4 +1,4 @@
-/* 
+/*
  *
  * For more information on how you can configure this file
  * reference the SubLim3 MagicMirror GitHub.
@@ -40,33 +40,14 @@ let config = {
 		},
 		{
 			module: "MMM-Carousel",
+			position: "bottom_bar", // Required to draw in position
 			config: {
 				transitionInterval: 10000,
-				ignoreModules: [],
+				ignoreModules: ["alert","clock","calendar","weather","compliments","MMM-Remote-Control"],
 				mode: "positional",
-                                        top_right: { enabled: true, ignoreModules: ["weather"] },
-					bottom_bar: { enabled: true, ignoreModules: [] }
+				bottom_bar: { enabled: true, ignoreModules: [] },
+				// top_right: { enabled: true, ignoreModules: ["weather"] }
 				}
-		},
-		{
-			module: 'MMM-Remote-Control',
-			// uncomment the following line to show the URL of the remote control on the mirror
-			position: 'bottom_left',
-			// you can hide this module afterwards from the remote control itself
-			config: {
-			customCommand: {},  // Optional, See "Using Custom Commands" below
-			showModuleApiMenu: true, // Optional, Enable the Module Controls menu
-			secureEndpoints: true, // Optional, See API/README.md
-				// uncomment any of the lines below if you're gonna use it
-				// customMenu: "custom_menu.json",
-					// Optional, See "Custom Menu Items" below
-			apiKey: "848a051b405e4eddb210765442efbe87",
-					// Optional, See API/README.md for details
-				// classes: {} // Optional, See "Custom Classes" below
-				}
-		},
-		{
-			module: "MMM-Remote-Control-Repository",
 		},
 		{
 			module: 'MMM-DailyBibleVerse',
@@ -148,6 +129,53 @@ let config = {
                                         }
                                 }
                 },
+		{
+			module: 'MMM-SystemMonitor',
+			position: 'top_left',
+			config: {
+				updateInterval: 60000,
+				cpuThermalZone: 0,
+				units: 'imperial'
+				}
+		},
+		{
+                        module: 'MMM-Remote-Control',
+                        // uncomment the following line to show the URL of the remote control on the mirror
+                        position: 'top_left',
+                        // you can hide this module afterwards from the remote control itself
+                        config: {
+                        customCommand: {},  // Optional, See "Using Custom Commands" below
+                        showModuleApiMenu: true, // Optional, Enable the Module Controls menu
+                        secureEndpoints: true, // Optional, See API/README.md
+                                // uncomment any of the lines below if you're gonna use it
+                                // customMenu: "custom_menu.json",
+                                        // Optional, See "Custom Menu Items" below
+                        apiKey: "848a051b405e4eddb210765442efbe87",
+                                        // Optional, See API/README.md for details
+                                // classes: {} // Optional, See "Custom Classes" below
+                                }
+                },
+                {
+                        module: "MMM-Remote-Control-Repository",
+                },
+
+        {
+		module: 'MMM-Screencast',
+		position: 'bottom_right', // This position is for a hidden <div /> and not the screencast window
+		config: {
+			position: 'top_center',
+			height: 600,
+			width: 1000,
+		}
+        },
+		{
+			module: 'MMM-JokeAPI',
+			position: 'bottom_bar',
+			config: {
+				category: "Any",
+				fetchInterval: 12 * 1000
+				}
+		},
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
