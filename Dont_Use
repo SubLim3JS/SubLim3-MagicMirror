@@ -1,8 +1,0 @@
-#!/bin/bash
-
-printf "
-This is an outdated script I can't yet delete.
-
-"
-
-sleep 3
