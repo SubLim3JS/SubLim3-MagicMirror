@@ -11,7 +11,7 @@ printf "
 
 
 "
-sleep 3
+sleep 2
 
 # Custom Compliments Prompt
 while true; do
