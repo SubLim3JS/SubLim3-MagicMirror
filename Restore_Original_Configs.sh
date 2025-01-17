@@ -59,47 +59,35 @@ done
 
 # Custom Base Config Prompt
 while true; do
-    echo "Do you want restore the base config? (Y/n)"
+    echo "Do you want restore the Base Config? (Y/n)"
     read answer
     answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
-    printf "\n"
 
     if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
-        printf "\n\n"
-        printf "*********************************************************\n"
-        printf "*** Rename config.js so the custom file can be added. ***\n"
-        printf "*********************************************************\n\n"
+        printf "\n"
+        printf "*****************************************\n"
+        printf "*** Restoring the original config.js. ***\n"
+        printf "*****************************************\n\n"
         printf ""
         sleep 3
 
-        if [ -f ~/MagicMirror/config/config.js ]; then
-            mv -f ~/MagicMirror/config/config.js ~/MagicMirror/config/original_config.js
+        if [ -f ~/MagicMirror/config/original_config.js ]; then
+            mv -f ~/MagicMirror/config/original_config.js ~/MagicMirror/config/config.js
             printf ""
-            printf " - Default config.js has been archived. - \n\n"
+            printf " - Default config.js has been restored. - \n\n"
             printf ""
         else
             printf ""
-            printf " - File config.js not found in ~/MagicMirror/config/ - \n\n"
+            printf " - File original_config.js not found in ~/MagicMirror/config/original_config.js - \n\n"
             printf ""
         fi
 
         printf ""
-        printf "***************************************************************\n"
-        printf "*** Move the SubLim3 custom config.js to the config folder. ***\n"
-        printf "***************************************************************\n\n"
+        printf "****************************************\n"
+        printf "*** - Compliments Script Complete. - ***\n"
+        printf "****************************************\n\n"
         printf ""
         sleep 3
-
-        if [ -f ~/SubLim3-MagicMirror/config.js ]; then
-            mv -f ~/SubLim3-MagicMirror/config.js ~/MagicMirror/config/config.js
-            printf ""
-            printf " - SubLim3 config.js has been moved to the MagicMirror config folder. - \n\n"
-            printf ""
-        else
-            printf ""
-            printf " - File SubLim3 config.js not found in ~/SubLim3-MagicMirror/ - \n\n"
-            printf ""
-        fi
         break
     elif [[ "$answer" == "n" || "$answer" == "no" ]]; then
         printf ""
@@ -108,7 +96,7 @@ while true; do
         break
     else
         printf ""
-        printf " - Invalid input, please enter Y or n. - \n\n"
+        printf "Invalid input, please enter Y or n."
         printf ""
     fi
 done
