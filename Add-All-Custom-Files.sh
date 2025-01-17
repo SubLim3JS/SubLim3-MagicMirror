@@ -1,83 +1,73 @@
 #!/bin/bash
-printf "   _____       __    __    _          _____    __  ____                     
-  / ___/__  __/ /_  / /   (_)___ ___ |__  /   /  |/  (_)_____________  _____
-  \__ \/ / / / __ \/ /   / / __ \`__ \ /_ <   / /|_/ / / ___/ ___/ __ \/ ___/
- ___/ / /_/ / /_/ / /___/ / / / / / /__/ /  / /  / / / /  / /  / /_/ / /    
-/____/\__,_/_.___/_____/_/_/ /_/ /_/____/  /_/  /_/_/_/  /_/   \____/_/     \n"
 
-# Add a few empty lines for spacing
-printf "\n\n\n"
+# Print the ASCII art
+printf "   _____       __    __    _          _____    __  ____                     \n"
+printf "  / ___/__  __/ /_  / /   (_)___ ___ |__  /   /  |/  (_)_____________  _____\n"
+printf "  \\__ \\/ / / / __ \\/ /   / / __ \`__ \\ /_ <   / /|_/ / / ___/ ___/ __ \\/ ___/\n"
+printf " ___/ / /_/ / /_/ / /___/ / / / / / /__/ /  / /  / / / /  / /  / /_/ / /    \n"
+printf "/____/\\__,_/_.___/_____/_/_/ /_/ /_/____/  /_/  /_/_/_/  /_/   \\____/_/     \n\n\n"
 
 sleep 5
 
+# Print the first message block
 printf "*********************************************************\n"
 printf "*** Rename config.js so the custom file can be added. ***\n"
-printf "*********************************************************\n"
-
-# Add a few empty lines for spacing
-printf "\n\n\n"
+printf "*********************************************************\n\n\n"
 
 sleep 5
 
-echo "*********************************************************"
-echo "*** Rename config.js so the custom file can be added. ***"
-echo "*********************************************************"
-
-echo -e "\n\n\n"
-
-sleep 5
-
-echo "*********************************************************"
-echo "*** Rename config.js so the custom file can be added. ***"
-echo "*********************************************************"
-sleep 5
-/n
-/n
-/n
+# Check and move config.js
 if [ -f ~/MagicMirror/config/config.js ]; then
     mv -f ~/MagicMirror/config/config.js ~/MagicMirror/config/original_config.js
-    echo "Default config.js has been archived."
+    printf "Default config.js has been archived.\n"
 else
-    echo "File config.js not found in ~/MagicMirror/config/"
+    printf "File config.js not found in ~/MagicMirror/config/\n"
 fi
 
-echo "***************************************************************"
-echo "*** Move the SubLim3 custom config.js to the config folder. ***"
-echo "***************************************************************"
+printf "***************************************************************\n"
+printf "*** Move the SubLim3 custom config.js to the config folder. ***\n"
+printf "***************************************************************\n"
+
 sleep 5
 
+# Check and copy the custom config.js
 if [ -f ~/SubLim3-MagicMirror/config.js ]; then
     cp -f ~/SubLim3-MagicMirror/config.js ~/MagicMirror/config/config.js
-    echo "SubLim3 config.js has been moved to the MagicMirror config folder."
+    printf "SubLim3 config.js has been moved to the MagicMirror config folder.\n"
 else
-    echo "File SubLim3 config.js not found in ~/SubLim3-MagicMirror/"
+    printf "File SubLim3 config.js not found in ~/SubLim3-MagicMirror/\n"
 fi
 
-echo "**************************************************************"
-echo "*** Rename compliments.js so the custom file can be added. ***"
-echo "**************************************************************"
+printf "**************************************************************\n"
+printf "*** Rename compliments.js so the custom file can be added. ***\n"
+printf "**************************************************************\n"
+
 sleep 5
 
+# Check and move compliments.js
 if [ -f ~/MagicMirror/modules/default/compliments/compliments.js ]; then
     mv -f ~/MagicMirror/modules/default/compliments/compliments.js ~/MagicMirror/modules/default/compliments/original_compliments.js
-    echo "Default compliments.js has been archived."
+    printf "Default compliments.js has been archived.\n"
 else
-    echo "File compliments.js not found in ~/MagicMirror/modules/default/compliments/"
+    printf "File compliments.js not found in ~/MagicMirror/modules/default/compliments/\n"
 fi
 
-echo "********************************************************"
-echo "**** Move compliments.js to the compliments folder. ****"
-echo "********************************************************"
+printf "********************************************************\n"
+printf "**** Move compliments.js to the compliments folder. ****\n"
+printf "********************************************************\n"
+
 sleep 5
 
+# Check and copy the custom compliments.js
 if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
     cp -f ~/SubLim3-MagicMirror/compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
-    echo "SubLim3 compliments.js has been moved to the MagicMirror compliments module folder."
+    printf "SubLim3 compliments.js has been moved to the MagicMirror compliments module folder.\n"
 else
-    echo "File compliments.js not found in ~/SubLim3-MagicMirror/"
+    printf "File compliments.js not found in ~/SubLim3-MagicMirror/\n"
 fi
 
-echo "****************************************************"
-echo "***  - All operations completed successfully.  - ***"
-echo "****************************************************"
+printf "****************************************************\n"
+printf "***  - All operations completed successfully.  - ***\n"
+printf "****************************************************\n"
+
 sleep 5
