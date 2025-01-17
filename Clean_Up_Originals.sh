@@ -20,7 +20,7 @@ printf "*****************************************************************\n\n"
 sleep 3
 
 if [ -f ~/MagicMirror/config/original_config.js ]; then
-    cp -f ~/MagicMirror/config/original_config.js
+    mv -f ~/MagicMirror/config/original_config.js ~/MagicMirror/config/config.js
     printf ""
     printf " - The original_config.js has been removed.  - \n\n\n"
     printf ""
@@ -40,7 +40,7 @@ sleep 3
 
 
 if [ -f ~/MagicMirror/modules/default/compliments/original_compliments.js ]; then
-    cp -f ~/MagicMirror/modules/default/compliments/original_compliments.js
+    mv -f ~/MagicMirror/modules/default/compliments/original_compliments.js
     printf " - The original_compliments.js has been removed. - \n\n\n"
 else
     printf " - File original_compliments.js not found in ~/MagicMirror/modules/default/compliments/ - \n\n\n"
