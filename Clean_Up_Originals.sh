@@ -13,9 +13,9 @@ printf "
 
 sleep 3
 
-printf "***************************************************************\n"
-printf "*** Removing original_config.js from ~/MagicMirror/config/. ***\n"
-printf "***************************************************************\n\n"
+printf "**************************************************************\n"
+printf "*** Removing original_config.js from ~/MagicMirror/config/ ***\n"
+printf "**************************************************************\n\n"
 
 sleep 3
 
