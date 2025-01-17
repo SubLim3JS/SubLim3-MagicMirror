@@ -20,7 +20,7 @@ while true; do
     answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 
     if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
-        printf ""
+        printf "\n\n"
         printf "**********************************************\n"
         printf "*** Restoring the original compliments.js. ***\n"
         printf "**********************************************\n\n"
@@ -57,9 +57,9 @@ while true; do
         fi
 
         printf ""
-        printf "****************************************************\n"
-        printf "***  - All operations completed successfully.  - ***\n"
-        printf "****************************************************\n\n"
+        printf "************************************************\n"
+        printf "***  - Compliments restored successfully.  - ***\n"
+        printf "************************************************\n\n"
         printf ""
         sleep 3
         break
@@ -82,7 +82,7 @@ while true; do
     answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 
     if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
-        printf ""
+        printf "\n\n"
         printf "*********************************************************\n"
         printf "*** Rename config.js so the custom file can be added. ***\n"
         printf "*********************************************************\n\n"
