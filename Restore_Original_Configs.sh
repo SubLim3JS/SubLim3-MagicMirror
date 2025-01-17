@@ -102,8 +102,8 @@ while true; do
 done
 
 printf ""
-printf "************************************\n"
-printf "***  - Config Script Complete. - ***\n"
-printf "************************************\n\n"
+printf "*****************************************\n"
+printf "***  - Restoration Script Complete. - ***\n"
+printf "*****************************************\n\n"
 printf ""
 sleep 1
