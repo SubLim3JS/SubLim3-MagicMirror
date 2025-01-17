@@ -13,12 +13,11 @@ printf "
 
 sleep 1
 
-# Print the first message block
 printf "*********************************************************\n"
 printf "*** Rename config.js so the custom file can be added. ***\n"
 printf "*********************************************************\n\n"
 
-sleep 3
+sleep 5
 
 # Check and move config.js
 if [ -f ~/MagicMirror/config/config.js ]; then
@@ -36,19 +35,18 @@ printf "***************************************************************\n"
 printf "*** Move the SubLim3 custom config.js to the config folder. ***\n"
 printf "***************************************************************\n"
 
-sleep 3
-
-printf "
-
-
-"
+sleep 5
 
 # Check and copy the custom config.js
 if [ -f ~/SubLim3-MagicMirror/config.js ]; then
     cp -f ~/SubLim3-MagicMirror/config.js ~/MagicMirror/config/config.js
-    printf "SubLim3 config.js has been moved to the MagicMirror config folder.\n"
+    printf ""
+    printf " - SubLim3 config.js has been moved to the MagicMirror config folder. - \n"
+    printf ""
 else
+    printf ""
     printf "File SubLim3 config.js not found in ~/SubLim3-MagicMirror/\n"
+    printf ""
 fi
 
 printf "**************************************************************\n"
@@ -60,9 +58,13 @@ sleep 5
 # Check and move compliments.js
 if [ -f ~/MagicMirror/modules/default/compliments/compliments.js ]; then
     mv -f ~/MagicMirror/modules/default/compliments/compliments.js ~/MagicMirror/modules/default/compliments/original_compliments.js
-    printf "Default compliments.js has been archived.\n"
+    printf ""
+    printf " - Default compliments.js has been archived. - \n"
+    printf ""
 else
+    printf ""
     printf "File compliments.js not found in ~/MagicMirror/modules/default/compliments/\n"
+    printf ""
 fi
 
 printf "********************************************************\n"
