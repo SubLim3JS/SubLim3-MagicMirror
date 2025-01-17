@@ -103,7 +103,7 @@ done
 
 printf ""
 printf "************************************\n"
-printf "***  - Config Script Complete.  - ***\n"
+printf "***  - Config Script Complete. - ***\n"
 printf "************************************\n\n"
 printf ""
 sleep 1
