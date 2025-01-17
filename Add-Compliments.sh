@@ -13,9 +13,9 @@ printf "
 
 sleep 3
 
-echo "**************************************************************"
-echo "*** Rename compliments.js so the custom file can be added. ***"
-echo "**************************************************************"
+echo "**************************************************************\n"
+echo "*** Rename compliments.js so the custom file can be added. ***\n"
+echo "**************************************************************\n\n"
 sleep 5
 
 if [ -f ~/MagicMirror/modules/default/compliments/compliments.js ]; then
@@ -29,9 +29,9 @@ else
     printf ""
 fi
 
-echo "*************************************************************"
-echo "*** Move custom compliments.js to the compliments folder. ***"
-echo "*************************************************************"
+echo "*************************************************************\n"
+echo "*** Move custom compliments.js to the compliments folder. ***\n"
+echo "*************************************************************\n\n"
 sleep 5
 
 if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
@@ -45,7 +45,6 @@ else
     printf ""
 fi
 
-echo "****************************************************"
-echo "***  - All operations completed successfully.  - ***"
-echo "****************************************************"
-sleep 5
+echo "****************************************************\n"
+echo "***  - All operations completed successfully.  - ***\n"
+echo "****************************************************\n\n"
