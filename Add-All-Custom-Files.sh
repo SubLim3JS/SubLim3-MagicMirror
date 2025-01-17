@@ -17,7 +17,7 @@ printf "*********************************************************\n"
 printf "*** Rename config.js so the custom file can be added. ***\n"
 printf "*********************************************************\n\n"
 
-sleep 5
+sleep 3
 
 # Check and move config.js
 if [ -f ~/MagicMirror/config/config.js ]; then
@@ -35,7 +35,7 @@ printf "***************************************************************\n"
 printf "*** Move the SubLim3 custom config.js to the config folder. ***\n"
 printf "***************************************************************\n"
 
-sleep 5
+sleep 3
 
 # Check and copy the custom config.js
 if [ -f ~/SubLim3-MagicMirror/config.js ]; then
@@ -53,7 +53,7 @@ printf "**************************************************************\n"
 printf "*** Rename compliments.js so the custom file can be added. ***\n"
 printf "**************************************************************\n"
 
-sleep 5
+sleep 3
 
 # Check and move compliments.js
 if [ -f ~/MagicMirror/modules/default/compliments/compliments.js ]; then
@@ -71,7 +71,7 @@ printf "********************************************************\n"
 printf "**** Move compliments.js to the compliments folder. ****\n"
 printf "********************************************************\n"
 
-sleep 5
+sleep 3
 
 # Check and copy the custom compliments.js
 if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
@@ -84,5 +84,3 @@ fi
 printf "****************************************************\n"
 printf "***  - All operations completed successfully.  - ***\n"
 printf "****************************************************\n"
-
-sleep 5
