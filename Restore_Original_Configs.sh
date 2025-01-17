@@ -123,4 +123,4 @@ printf "****************************************************\n"
 printf "***  - All operations completed successfully.  - ***\n"
 printf "****************************************************\n"
 printf ""
-sleep 5
+sleep 2
