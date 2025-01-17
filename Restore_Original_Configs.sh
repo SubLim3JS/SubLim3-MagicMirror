@@ -11,7 +11,6 @@ printf "
 
 
 "
-
 sleep 3
 
 # Custom Compliments Prompt
