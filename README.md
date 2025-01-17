@@ -41,9 +41,9 @@ ________________________________________________________________________________
 <a href="https://github.com/MarcLandis/MMM-PIR-Sensor">MMM-PIR-Sensor</a>  
 <a href="https://github.com/arthurgarzajr/MMM-DailyBibleVerse">MMM-DailyBibleVerse</a>  
 <a href="https://github.com/kevinatown/MMM-Screencast">MMM-Screencast</a>  
-<a href="https://github.com/randomBrainstormer/MMM-GoogleCalendar">MMM-GoogleCalendar</a> 
-<a href="https://github.com/btastic/MMM-SystemMonitor">MMM-SystemMonitor</a> 
-<a href="https://magicmirror.builders/">Test 2</a> 
+<a href="https://github.com/randomBrainstormer/MMM-GoogleCalendar">MMM-GoogleCalendar</a>  
+<a href="https://github.com/btastic/MMM-SystemMonitor">MMM-SystemMonitor</a>  
+<a href="https://magicmirror.builders/">Test 2</a>
 
 _____________________________________________________________________________________________________________________________________________________________________
 
