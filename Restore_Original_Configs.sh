@@ -19,8 +19,8 @@ while true; do
     read answer
     answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 
-    if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
-        printf "\n\n"
+    if [[ "Answer $answer" == "y" || "$answer" == "yes" ]]; then
+        printf "\n"
         printf "**********************************************\n"
         printf "*** Restoring the original compliments.js. ***\n"
         printf "**********************************************\n\n"
@@ -39,9 +39,9 @@ while true; do
         fi
 
         printf ""
-        printf "************************************************\n"
-        printf "***  - Compliments restored successfully.  - ***\n"
-        printf "************************************************\n\n"
+        printf "****************************************\n"
+        printf "*** - Compliments Script Complete. - ***\n"
+        printf "****************************************\n\n"
         printf ""
         sleep 3
         break
@@ -115,7 +115,7 @@ done
 
 printf ""
 printf "************************************\n"
-printf "***  - Restorations Complete.  - ***\n"
+printf "***  - Config Script Complete.  - ***\n"
 printf "************************************\n\n"
 printf ""
 sleep 1
