@@ -84,8 +84,8 @@ else
     printf " - File SubLim3 config.js not found in ~/SubLim3-MagicMirror/ - \n\n\n"
     printf ""
 fi
-printf "****************************************************\n"
+printf "***************************************************\n"
 printf "***  - All operations completed successfully. - ***\n"
-printf "****************************************************\n\n"
+printf "***************************************************\n\n"
 
 sleep 1
