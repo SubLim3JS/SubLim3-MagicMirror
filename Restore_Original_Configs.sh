@@ -14,27 +14,27 @@ sleep 3
 
 # Custom Compliments Prompt
 while true; do
-    echo "Do you want custom Compliments? (Y/n)"
+    echo "Do you want restore Compliments? (Y/n)"
     read answer
     answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 
     if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
-        echo "**************************************************************"
-        echo "*** Rename compliments.js so the custom file can be added. ***"
-        echo "**************************************************************"
-        sleep 5
+        printf "**********************************************\n"
+        printf "*** Restoring the original compliments.js. ***\n"
+        printf "**********************************************\n\n"
+        sleep 3
 
         if [ -f ~/MagicMirror/modules/default/compliments/compliments.js ]; then
-            mv -f ~/MagicMirror/modules/default/compliments/compliments.js ~/MagicMirror/modules/default/compliments/original_compliments.js
-            echo "Default compliments.js has been archived."
+            mv -f ~/MagicMirror/modules/default/compliments/original_compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
+            printf " - Default compliments.js has been restored. - \n\n"
         else
-            echo "File compliments.js not found in ~/MagicMirror/modules/default/compliments/"
+            printf " - File original_compliments.js not found in ~/MagicMirror/modules/default/compliments/ - \n\n"
         fi
 
-        echo "*************************************************************"
-        echo "*** Move custom compliments.js to the compliments folder. ***"
-        echo "*************************************************************"
-        sleep 5
+        printf "*************************************************************\n"
+        printf "*** Move custom compliments.js to the compliments folder. ***\n"
+        printf "*************************************************************\n"
+        sleep 3
 
         if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
             mv -f ~/SubLim3-MagicMirror/compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
@@ -43,13 +43,13 @@ while true; do
             echo "File compliments.js not found in ~/SubLim3-MagicMirror/"
         fi
 
-        echo "****************************************************"
-        echo "***  - All operations completed successfully.  - ***"
-        echo "****************************************************"
-        sleep 5
+        printf "****************************************************\n"
+        printf "***  - All operations completed successfully.  - ***\n"
+        printf "****************************************************\n\n"
+        sleep 5\3
         break
     elif [[ "$answer" == "n" || "$answer" == "no" ]]; then
-        echo "No changes have been made!"
+        echo " - No changes have been made! - \n"
         break
     else
         echo "Invalid input, please enter Y or n."
