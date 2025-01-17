@@ -11,7 +11,7 @@ printf "
 
 "
 
-sleep 3
+sleep 2
 
 printf "*********************************************************\n"
 printf "*** Rename config.js so the custom file can be added. ***\n"
@@ -21,9 +21,9 @@ sleep 3
 
 # Check and move config.js
 if [ -f ~/MagicMirror/config/config.js ]; then
-    cp -f ~/MagicMirror/config/config.js ~/MagicMirror/config/original_config.js
+    mv -f ~/MagicMirror/config/config.js ~/MagicMirror/config/original_config.js
     printf ""
-    printf " - Default config.js has been archived - \n\n\n"
+    printf " - Default config.js has been archived. - \n\n\n"
     printf ""
 else
     printf ""
@@ -57,7 +57,7 @@ sleep 3
 
 # Check and move compliments.js
 if [ -f ~/MagicMirror/modules/default/compliments/compliments.js ]; then
-    cp -f ~/MagicMirror/modules/default/compliments/compliments.js ~/MagicMirror/modules/default/compliments/original_compliments.js
+    mv -f ~/MagicMirror/modules/default/compliments/compliments.js ~/MagicMirror/modules/default/compliments/original_compliments.js
     printf ""
     printf " - Default compliments.js has been archived. - \n\n\n"
     printf ""
@@ -88,3 +88,5 @@ fi
 printf "****************************************************\n"
 printf "***  - All operations completed successfully. - ***\n"
 printf "****************************************************\n\n"
+
+sleep 1
