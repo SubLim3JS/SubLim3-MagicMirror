@@ -16,7 +16,8 @@ sleep 3
 printf "**************************************************************\n"
 printf "*** Rename compliments.js so the custom file can be added. ***\n"
 printf "**************************************************************\n\n"
-sleep 5
+
+sleep 3
 
 if [ -f ~/MagicMirror/modules/default/compliments/compliments.js ]; then
     cp -f ~/MagicMirror/modules/default/compliments/compliments.js ~/MagicMirror/modules/default/compliments/original_compliments.js
@@ -32,7 +33,7 @@ fi
 printf "*************************************************************\n"
 printf "*** Move custom compliments.js to the compliments folder. ***\n"
 printf "*************************************************************\n\n"
-sleep 5
+sleep 3
 
 if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
     cp -f ~/SubLim3-MagicMirror/compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
