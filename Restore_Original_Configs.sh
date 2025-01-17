@@ -61,17 +61,17 @@ while true; do
         printf "***  - All operations completed successfully.  - ***\n"
         printf "****************************************************\n\n"
         printf ""
-        sleep 5\3
+        sleep 3
         break
     elif [[ "$answer" == "n" || "$answer" == "no" ]]; then
-        printf""
-        printf " - No changes have been made! - \n"
-        printf""
+        printf ""
+        printf " - No changes have been made! - \n\n"
+        printf ""
         break
     else
-        printf""
+        printf ""
         printf "Invalid input, please enter Y or n."
-        printf""
+        printf ""
     fi
 done
 
@@ -87,7 +87,7 @@ while true; do
         printf "*** Rename config.js so the custom file can be added. ***\n"
         printf "*********************************************************\n\n"
         printf ""
-        sleep 5
+        sleep 3
 
         if [ -f ~/MagicMirror/config/config.js ]; then
             mv -f ~/MagicMirror/config/config.js ~/MagicMirror/config/original_config.js
@@ -105,7 +105,7 @@ while true; do
         printf "*** Move the SubLim3 custom config.js to the config folder. ***\n"
         printf "***************************************************************\n\n"
         printf ""
-        sleep 5
+        sleep 3
 
         if [ -f ~/SubLim3-MagicMirror/config.js ]; then
             mv -f ~/SubLim3-MagicMirror/config.js ~/MagicMirror/config/config.js
@@ -120,7 +120,7 @@ while true; do
         break
     elif [[ "$answer" == "n" || "$answer" == "no" ]]; then
         printf ""
-        printf "You chose No."
+        printf "You chose No.\n\n"
         printf ""
         break
     else
