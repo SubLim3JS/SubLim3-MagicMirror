@@ -27,7 +27,7 @@ Execute at the root folder.
 cd ~
 git clone https://github.com/SubLim3JS/SubLim3-MagicMirror
 cd SubLim3-MagicMirror
-chmod +x Add-All-Custom-Files.sh
+bash -x Add-All-Custom-Files.sh
 ```
 _____________________________________________________________________________________________________________________________________________________________________
 
