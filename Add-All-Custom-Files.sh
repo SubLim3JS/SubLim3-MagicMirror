@@ -25,13 +25,13 @@ sleep 3
 # Check and move config.js
 if [ -f ~/MagicMirror/config/config.js ]; then
     mv -f ~/MagicMirror/config/config.js ~/MagicMirror/config/original_config.js
-    printf "/n"
+    printf ""
     printf " - Default config.js has been archived - \n\n\n"
-    printf "/n"
+    printf ""
 else
-    printf "/n"
+    printf ""
     printf " - File config.js not found in ~/MagicMirror/config/ - \n\n\n"
-    printf "/n"
+    printf ""
 fi
 
 printf "***************************************************************\n"
