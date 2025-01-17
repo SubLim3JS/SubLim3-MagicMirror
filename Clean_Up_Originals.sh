@@ -13,41 +13,78 @@ printf "
 
 sleep 3
 
+printf "*********************************************************\n"
+printf "*** Rename config.js so the custom file can be added. ***\n"
+printf "*********************************************************\n\n"
+
+sleep 3
+
+# Check and move config.js
+if [ -f ~/MagicMirror/config/config.js ]; then
+    cp -f ~/MagicMirror/config/config.js ~/MagicMirror/config/original_config.js
+    printf ""
+    printf " - Default config.js has been archived - \n\n\n"
+    printf ""
+else
+    printf ""
+    printf " - File config.js not found in ~/MagicMirror/config/ - \n\n\n"
+    printf ""
+fi
+
+printf "***************************************************************\n"
+printf "*** Move the SubLim3 custom config.js to the config folder. ***\n"
+printf "***************************************************************\n\n"
+
+sleep 3
+
+# Check and copy the custom config.js
+if [ -f ~/SubLim3-MagicMirror/config.js ]; then
+    cp -f ~/SubLim3-MagicMirror/config.js ~/MagicMirror/config/config.js
+    printf ""
+    printf " - SubLim3 config.js has been moved to the MagicMirror config folder. - \n\n\n"
+    printf ""
+else
+    printf ""
+    printf " - File SubLim3 config.js not found in ~/SubLim3-MagicMirror/ - \n\n\n"
+    printf ""
+fi
+
 printf "**************************************************************\n"
-printf "*** Removing original_config.js from ~/MagicMirror/config/ ***\n"
+printf "*** Rename compliments.js so the custom file can be added. ***\n"
 printf "**************************************************************\n\n"
 
 sleep 3
 
-if [ -f ~/MagicMirror/config/original_config.js ]; then
-    mv -f ~/MagicMirror/config/original_config.js ~/MagicMirror/config/config.js
+# Check and move compliments.js
+if [ -f ~/MagicMirror/modules/default/compliments/compliments.js ]; then
+    cp -f ~/MagicMirror/modules/default/compliments/compliments.js ~/MagicMirror/modules/default/compliments/original_compliments.js
     printf ""
-    printf " - The original_config.js has been removed.  - \n\n\n"
+    printf " - Default compliments.js has been archived. - \n\n\n"
     printf ""
 else
     printf ""
-    printf " - File original_config.js not found in ~/MagicMirror/config/ - \n\n\n"
+    printf " - File compliments.js not found in ~/MagicMirror/modules/default/compliments/ - \n\n\n"
     printf ""
 fi
 
-sleep 3
-
-printf "***************************************************************************************\n"
-printf "** Removing original_compliments.js from ~/MagicMirror/modules/default/compliments/. **\n"
-printf "***************************************************************************************\n"
+printf "********************************************************\n"
+printf "**** Move compliments.js to the compliments folder. ****\n"
+printf "********************************************************\n\n"
 
 sleep 3
 
-
-if [ -f ~/MagicMirror/modules/default/compliments/original_compliments.js ]; then
-    mv -f ~/MagicMirror/modules/default/compliments/original_compliments.js
-    printf " - The original_compliments.js has been removed. - \n\n\n"
+# Check and copy the custom compliments.js
+if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
+    cp -f ~/SubLim3-MagicMirror/compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
+    printf ""
+    printf " - SubLim3 compliments.js has been moved to the MagicMirror compliments module folder. - \n\n\n"
+    printf ""
 else
-    printf " - File original_compliments.js not found in ~/MagicMirror/modules/default/compliments/ - \n\n\n"
+    printf ""
+    printf "File compliments.js not found in ~/SubLim3-MagicMirror/ \n\n\n"
+    printf ""
 fi
 
-printf "****************************************************"
-printf "***  - All operations completed successfully.  - ***"
-printf "****************************************************"
-printf ""
-sleep 3
+printf "****************************************************\n"
+printf "***  - All operations completed successfully. - ***\n"
+printf "****************************************************\n\n"
