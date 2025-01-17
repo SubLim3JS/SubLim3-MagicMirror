@@ -26,9 +26,13 @@ while true; do
 
         if [ -f ~/MagicMirror/modules/default/compliments/compliments.js ]; then
             mv -f ~/MagicMirror/modules/default/compliments/original_compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
+            printf ""
             printf " - Default compliments.js has been restored. - \n\n"
+            printf ""
         else
+            printf ""
             printf " - File original_compliments.js not found in ~/MagicMirror/modules/default/compliments/ - \n\n"
+            printf ""
         fi
 
         printf "*************************************************************\n"
@@ -38,9 +42,13 @@ while true; do
 
         if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
             mv -f ~/SubLim3-MagicMirror/compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
-            echo "SubLim3 compliments.js has been moved to the MagicMirror compliments module folder."
+            printf ""
+            printf "SubLim3 compliments.js has been moved to the MagicMirror compliments module folder."
+            printf ""
         else
-            echo "File compliments.js not found in ~/SubLim3-MagicMirror/"
+            printf ""
+            printf "File compliments.js not found in ~/SubLim3-MagicMirror/"
+            printf ""
         fi
 
         printf "****************************************************\n"
@@ -49,7 +57,9 @@ while true; do
         sleep 5\3
         break
     elif [[ "$answer" == "n" || "$answer" == "no" ]]; then
-        echo " - No changes have been made! - \n"
+        printf""
+        printf " - No changes have been made! - \n"
+        printf""
         break
     else
         echo "Invalid input, please enter Y or n."
