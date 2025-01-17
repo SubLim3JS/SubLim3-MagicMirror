@@ -7,13 +7,18 @@ printf "   _____       __    __    _          _____    __  ____
 /____/\__,_/_.___/_____/_/_/ /_/ /_/____/  /_/  /_/_/_/  /_/   \____/_/     "
 
 sleep 5
-
+/n
+/n
+/n
 # Print the first message block
 printf "*********************************************************\n"
 printf "*** Rename config.js so the custom file can be added. ***\n"
 printf "*********************************************************\n\n\n"
 
 sleep 5
+/n
+/n
+/n
 
 # Check and move config.js
 if [ -f ~/MagicMirror/config/config.js ]; then
@@ -28,6 +33,9 @@ printf "*** Move the SubLim3 custom config.js to the config folder. ***\n"
 printf "***************************************************************\n"
 
 sleep 5
+/n
+/n
+/n
 
 # Check and copy the custom config.js
 if [ -f ~/SubLim3-MagicMirror/config.js ]; then
