@@ -48,11 +48,11 @@ while true; do
         if [ -f ~/SubLim3-MagicMirror/compliments.js ]; then
             mv -f ~/SubLim3-MagicMirror/compliments.js ~/MagicMirror/modules/default/compliments/compliments.js
             printf ""
-            printf "SubLim3 compliments.js has been moved to the MagicMirror compliments module folder."
+            printf " - SubLim3 compliments.js has been moved to the MagicMirror compliments module folder. - \n\n"
             printf ""
         else
             printf ""
-            printf "File compliments.js not found in ~/SubLim3-MagicMirror/"
+            printf " - File compliments.js not found in ~/SubLim3-MagicMirror/ - \n\n"
             printf ""
         fi
 
@@ -92,11 +92,11 @@ while true; do
         if [ -f ~/MagicMirror/config/config.js ]; then
             mv -f ~/MagicMirror/config/config.js ~/MagicMirror/config/original_config.js
             printf ""
-            printf "Default config.js has been archived."
+            printf " - Default config.js has been archived. - \n\n"
             printf ""
         else
             printf ""
-            printf "File config.js not found in ~/MagicMirror/config/"
+            printf " - File config.js not found in ~/MagicMirror/config/ - \n\n"
             printf ""
         fi
 
@@ -110,22 +110,22 @@ while true; do
         if [ -f ~/SubLim3-MagicMirror/config.js ]; then
             mv -f ~/SubLim3-MagicMirror/config.js ~/MagicMirror/config/config.js
             printf ""
-            printf "SubLim3 config.js has been moved to the MagicMirror config folder."
+            printf " - SubLim3 config.js has been moved to the MagicMirror config folder. - \n\n"
             printf ""
         else
             printf ""
-            printf "File SubLim3 config.js not found in ~/SubLim3-MagicMirror/"
+            printf " - File SubLim3 config.js not found in ~/SubLim3-MagicMirror/ - \n\n"
             printf ""
         fi
         break
     elif [[ "$answer" == "n" || "$answer" == "no" ]]; then
         printf ""
-        printf "You chose No.\n\n"
+        printf " - You chose No. - \n\n"
         printf ""
         break
     else
         printf ""
-        printf "Invalid input, please enter Y or n."
+        printf " - Invalid input, please enter Y or n. - "
         printf ""
     fi
 done
